@@ -1,0 +1,134 @@
+.skills {
+  background: #0a0a0a;
+  padding: 19px 0;
+  height: 102vh;
+  position: relative;
+}
+
+.skills .down-arrow {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 1000;
+  width: 50px;
+}
+
+.skills .down-arrow svg {
+  width: 50px;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+
+.skills h2 .underline {
+  width: 59px;
+  height: 3px;
+  background: white;
+  border-radius: 52px;
+}
+
+.my-skills {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  height: 71%;
+}
+
+.my-skills .upperline {
+  display: flex;
+  gap: 40px;
+}
+
+.my-skills .belowline {
+  display: flex;
+  gap: 50px;
+}
+
+.my-skills svg {
+  width: 147px;
+  cursor: pointer;
+}
+
+.html svg path {
+  transition: all 0.5s ease;
+}
+
+.html svg:hover path:nth-child(1) {
+  fill: #E44D26;
+  stroke: none;
+}
+
+.html svg:hover path:nth-child(2) {
+  fill: #F16529;
+}
+
+.css svg path {
+  transition: all 0.5s ease;
+}
+
+.css svg:hover path:nth-child(1) {
+  fill: #1572B6;
+  stroke: none;
+}
+
+.css svg:hover path:nth-child(2) {
+  fill: #33A9DC;
+}
+
+.js svg path {
+  transition: all 0.5s ease;
+}
+
+.js svg:hover path:nth-child(1) {
+  fill: #F0DB4F;
+  stroke: none;
+}
+
+.js svg:hover path:nth-child(2) {
+  fill: #323330;
+}
+
+.react svg g {
+  transition: all 0.5s ease;
+}
+
+.react svg:hover g {
+  fill: #61DAFB;
+}
+
+.typescript svg path {
+  transition: all 0.5s ease;
+}
+
+.typescript svg:hover path:nth-child(2) {
+  fill: #007acc;
+  stroke: none;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .my-skills .upperline {
+    gap: 19px;
+  }
+
+  .my-skills svg {
+    width: 103px;
+  }
+
+  .skills .down-arrow {
+    display: none;
+  }
+}

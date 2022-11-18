@@ -1,0 +1,75 @@
+.contact {
+  padding: 19px 0;
+  height: 102vh;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: black;
+}
+
+.contact h2 .underline {
+  width: 59px;
+  height: 3px;
+  background: black;
+  border-radius: 52px;
+}
+
+.contact-sources {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  text-align: center;
+  height: 56%;
+  align-items: center;
+}
+
+.contact-sources svg {
+  width: 128px;
+}
+
+.contact-sources p {
+  font-size: 20px;
+}
+
+.contact-sources a {
+  text-decoration: none;
+  color: #0a0a0a;
+  padding: 7px 7px;
+  height: 252px;
+  width: 290px;
+  transition: all 0.2s ease;
+  border: 3px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-sources a:visited {
+  color: #0a0a0a;
+}
+
+.contact-sources a:hover {
+  border: 3px solid #0a0a0a;
+}
+
+.contact-sources a svg path {
+  transition: all 0.5s ease;
+}
+
+.contact-sources a.linkedin:hover svg path {
+  fill: #0076b2;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .contact-sources {
+    flex-direction: column;
+    margin-top: 99px;
+  }
+}
